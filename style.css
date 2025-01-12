@@ -93,7 +93,7 @@
 @media only screen and (max-width: 768px) {
   .bottom_section {
     flex-direction: column;
-    height: 80vh;
+    height: 75vh;
   }
   .bottom_section_1st_half {
     flex-direction: column;
@@ -121,7 +121,7 @@
   .top_section {
     width: 99vw;
     padding: 10px;
-    height: 15vh;
+    height: 20vh;
     text-align: left;
     border: 0;
   }
@@ -133,7 +133,9 @@
   }
   .top_section h1 {
     position: relative;
-    right: 30vh;
+    right: 20vh;
+    font-size: 25px;
+    box-sizing: border-box;
   }
   .top_section button {
     height: 5vh;
@@ -143,3 +145,4 @@
     width: 99vw;
   }
 }
+
