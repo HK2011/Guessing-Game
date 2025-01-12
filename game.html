@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Guessing Game</title>
+  </head>
+  <body>
+    <section class="main">
+      <div class="full_section">
+        <div class="top_section">
+          <h1>Guessing Game</h1>
+          <button onclick="restart()" class="reset">Start/Restart</button>
+
+          <h2 class="guess">?</h2>
+        </div>
+        <div class="bottom_section">
+          <div class="bottom_section_1st_half">
+            <input
+              type="number"
+              id="guessing_value"
+              placeholder="ENTER YOUR ANSWER"
+            />
+            <button onclick="guessedAnswer()" class="submit">Submit</button>
+          </div>
+          <div class="bottom_section_2nd_half">
+            <h1 id="result">Result</h1>
+            <h1>Score:<span id="score">100</span></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

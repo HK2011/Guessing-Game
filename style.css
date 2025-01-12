@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top_section {
+  background-color: #00293b;
+  text-align: center;
+  color: white;
+  margin: auto;
+  font-size: 25px;
+  height: 40vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 5px dashed black;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guess {
+  position: absolute;
+  color: black;
+  background-color: grey;
+  padding: 30px;
+  width: 35px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 3px dashed black;
+  margin-bottom: 359px;
+  height: 40px;
+}
+
+.bottom_section {
+  display: flex;
+}
+
+.bottom_section_1st_half {
+  background-color: rgb(206, 206, 206);
+  height: 60vh;
+  width: 50vw;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottom_section_2nd_half {
+  background-color: gray;
+  height: 60vh;
+  width: 50vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Welcome {
+  background-color: #00293b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.instruct {
+  font-size: 33px;
+  background-color: grey;
+  font-weight: 100;
+  padding: 77px;
+  border: 5px solid black;
+  margin: 30px;
+}
+
+.start_game {
+  background-color: #00293b;
+  color: white;
+  align-items: center;
+  padding: 20px;
+  width: 40vw;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .bottom_section {
+    flex-direction: column;
+    height: 80vh;
+  }
+  .bottom_section_1st_half {
+    flex-direction: column;
+    width: 99vw;
+
+    padding: 120px;
+  }
+
+  .bottom_section_2nd_half {
+    flex-direction: column;
+    width: 99vw;
+    padding: 120px;
+  }
+
+  .instruct {
+    font-size: 26px;
+    background-color: grey;
+    gap: 10px;
+    font-weight: 100;
+    padding: 60px;
+    border: 5px solid black;
+    margin: 30px;
+  }
+
+  .top_section {
+    width: 99vw;
+    padding: 10px;
+    height: 15vh;
+    text-align: left;
+    border: 0;
+  }
+  .guess {
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+  }
+  .top_section h1 {
+    position: relative;
+    right: 30vh;
+  }
+  .top_section button {
+    height: 5vh;
+    position: absolute;
+    margin-top: 200vh;
+    background-color: #00293b;
+    width: 99vw;
+  }
+}
