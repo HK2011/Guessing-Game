@@ -79,6 +79,7 @@
   font-weight: 100;
   padding: 77px;
   border: 5px solid black;
+  margin:25px;
 
   
 }
@@ -133,7 +134,7 @@
     display: block;
   }
   .instruct {
-    height: 100vh;
+    height: 200vh;
   }
 
 }
