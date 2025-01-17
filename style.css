@@ -132,6 +132,8 @@
     background-color: #00293b;
     display: block;
   }
-
+  .instruct {
+    height: 100vh;
+  }
 
 }
