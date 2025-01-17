@@ -100,7 +100,7 @@
 @media only screen and (max-width: 768px) {
   .bottom_section {
     flex-direction: column;
-    height: 80vh;
+    height: 75vh;
   }
   .bottom_section_1st_half {
     width: 97.4vw;
