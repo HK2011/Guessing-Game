@@ -17,6 +17,7 @@
   border: 5px dashed black;
   flex-direction: column;
   gap: 10px;
+  position: relative;
 }
 
 .guess {
@@ -29,9 +30,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-bottom: -35px;
   border: 3px dashed black;
-  margin-bottom: 359px;
+
   height: 40px;
 }
 
@@ -90,59 +91,49 @@
   border-radius: 20px;
 }
 
+.reset_sub {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .bottom_section {
     flex-direction: column;
-    height: 75vh;
+    height: 80vh;
   }
   .bottom_section_1st_half {
-    flex-direction: column;
-    width: 99vw;
-
-    padding: 120px;
+    width: 97.4vw;
+  }
+  .bottom_section_2nd_half {
+    width: 97.4vw;
+  }
+  .reset {
+    display: none;
+  }
+  .top_section {
+    padding: 10px;
+    height: 20vh;
+    border: 0;
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
   }
 
-  .bottom_section_2nd_half {
-    flex-direction: column;
-    width: 99vw;
-    padding: 120px;
+  .guess {
+    position: static;
+    margin-bottom: 0px;
+  }
+
+  .reset_sub {
+    height: 5vh;
+    width: 97.4vw;
+    background-color: #00293b;
+    display: block;
   }
 
   .instruct {
-    font-size: 26px;
-    background-color: grey;
-    gap: 10px;
-    font-weight: 100;
-    padding: 60px;
-    border: 5px solid black;
-    margin: 30px;
-  }
-
-  .top_section {
-    width: 99vw;
-    padding: 10px;
-    height: 20vh;
-    text-align: left;
-    border: 0;
-  }
-  .guess {
-    position: absolute;
-
-    top: 30px;
-    right: 18px;
-  }
-  .top_section h1 {
-    position: relative;
-    right: 20vh;
-    font-size: 25px;
-    box-sizing: border-box;
-  }
-  .top_section button {
-    height: 5vh;
-    position: absolute;
-    margin-top: 200vh;
-    background-color: #00293b;
-    width: 99vw;
+    height: 100vh;
+    font-size: 27px;
   }
 }
-
