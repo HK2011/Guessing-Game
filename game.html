@@ -7,12 +7,17 @@
 
     <title>Guessing Game</title>
   </head>
+
   <body>
     <section class="main">
       <div class="full_section">
         <div class="top_section">
           <h1>Guessing Game</h1>
           <button onclick="restart()" class="reset">Start/Restart</button>
+          <audio
+            id="trumpetStartSound"
+            src="TunePocket-Trumpet-Fanfares-1-Preview.mp3"
+          ></audio>
 
           <h2 class="guess">?</h2>
         </div>
@@ -24,10 +29,12 @@
               placeholder="ENTER YOUR ANSWER"
             />
             <button onclick="guessedAnswer()" class="submit">Submit</button>
+            <audio id="fail_sound" src="trumpet-fail-242645.mp3"></audio>
+            <audio id="yay_sound" src="preview.mp3"></audio>
           </div>
           <div class="bottom_section_2nd_half">
             <h1 id="result">Result</h1>
-            <h1>Score:<span id="score">100</span></h1>
+            <h1>Score:<span class="score">100</span></h1>
           </div>
         </div>
       </div>
