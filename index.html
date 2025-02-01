@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"
+    />
     <title>Guessing game instructions</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -37,6 +40,14 @@
       >
     </p>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+
+      window.addEventListener("load", function () {
+        // Scroll to hide the address bar
+        setTimeout(function () {
+          window.scrollTo(0, 1);
+        }, 0);
+      });
+    </script>
   </body>
 </html>

@@ -2,6 +2,8 @@ let randomNumber = (min, max) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
 
 let guessingNumber = randomNumber(1, 100);
+let result = document.getElementById("result");
+
 let submit = document.querySelector(".submit");
 let reset = document.querySelector(".reset");
 console.log(guessingNumber);
@@ -9,11 +11,13 @@ document.querySelector(".guess").textContent = "?";
 
 let score = 100;
 // document.getElementById("trumpetStartSound").play();
+let restartElement = document.querySelector(".reset_sub");
+
+let startElement = document.querySelector(".reset");
 
 function restart() {
   document.getElementById("trumpetStartSound").play();
-  let restartElement = document.querySelector(".reset_sub");
-  let startElement = document.querySelector(".reset");
+
   startElement.style.pointerEvents = "none";
   startElement.style.backgroundColor = "green";
   startElement.textContent = "Game In Progress";
@@ -45,19 +49,22 @@ function guessedAnswer() {
     document.querySelector(".guess").style.display = "flex";
     document.querySelector(".guess").style.alignItems = "center";
     document.getElementById("yay_sound").play();
+
+    restartElement.style.pointerEvents = "auto";
+    restartElement.style.backgroundColor = "silver";
+    restartElement.textContent = "Start/Restart";
   }
+
   if (score == 0) {
-    document.getElementById("result").textContent =
-      "you lost .Click restart to keep playing";
-
+    result.textContent = "You Lost😔.Try again by clicking on Restart.";
     submit.style.pointerEvents = "none";
+    startElement.style.pointerEvents = "auto";
+    startElement.style.backgroundColor = "silver";
+    startElement.textContent = "Start/Restart";
+    restartElement.style.pointerEvents = "auto";
+    restartElement.style.backgroundColor = "silver";
     restartElement.textContent = "Start/Restart";
   }
-
-  if (score == -10) {
-    location.reload();
-    restartElement.textContent = "Start/Restart";
-  }
-
-  console.log(score);
 }
+
+console.log(score);

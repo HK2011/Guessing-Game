@@ -103,6 +103,9 @@ guessing_value {
 }
 
 @media only screen and (max-width: 768px) {
+  .submit {
+    width: 20vw;
+  }
   .bottom_section {
     flex-direction: column;
     height: 75vh;

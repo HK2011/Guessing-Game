@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0  minimal-ui"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Guessing Game</title>
@@ -41,6 +44,12 @@
     </section>
     <button onclick="restart()" class="reset_sub">Start/Restart</button>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+            window.addEventListener("load", function() {
+          setTimeout(function() {
+              window.scrollTo(0, 1);  // Scroll down slightly to hide address bar
+          }, 0);
+      });
+    </script>
   </body>
 </html>
