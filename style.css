@@ -102,7 +102,42 @@ guessing_value {
   display: none;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.bottom_section_1st_half input {
+  height: 5vh;
+  align-items: center;
+  background-color: #00293b;
+  color: white;
+
+  width: 15vw;
+}
+.bottom_section_1st_half button {
+  height: 5vh;
+  background-color: gray;
+
+  width: 15vw;
+}
+
 @media only screen and (max-width: 768px) {
+  .bottom_section_1st_half input {
+    height: 7vh;
+    align-items: center;
+    background-color: #00293b;
+    color: white;
+    width: 30vw;
+  }
+  .bottom_section_1st_half button {
+    height: 7vh;
+    background-color: gray;
+    width: 30vw;
+  }
   .submit {
     width: 20vw;
   }

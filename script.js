@@ -26,7 +26,7 @@ function restart() {
   restartElement.style.backgroundColor = "limegreen";
   restartElement.textContent = "Game In Progress";
 
-    if (document.documentElement.requestFullscreen) {
+  if (document.documentElement.requestFullscreen) {
     document.documentElement.requestFullscreen();
   } else if (document.documentElement.mozRequestFullScreen) {
     // Firefox
@@ -38,6 +38,11 @@ function restart() {
     // IE/Edge
     document.documentElement.msRequestFullscreen();
   }
+
+  result.textContent = "Result";
+  submit.style.pointerEvents = "auto";
+  score = 100;
+  document.querySelector(".score").textContent = score;
 }
 
 function guessedAnswer() {
@@ -77,7 +82,6 @@ function guessedAnswer() {
     restartElement.style.pointerEvents = "auto";
     restartElement.style.backgroundColor = "silver";
     restartElement.textContent = "Start/Restart";
+    // restartElement = location.reload();
   }
 }
-
-console.log(score);
