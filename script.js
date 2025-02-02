@@ -25,6 +25,19 @@ function restart() {
   restartElement.style.pointerEvents = "none";
   restartElement.style.backgroundColor = "limegreen";
   restartElement.textContent = "Game In Progress";
+
+    if (document.documentElement.requestFullscreen) {
+    document.documentElement.requestFullscreen();
+  } else if (document.documentElement.mozRequestFullScreen) {
+    // Firefox
+    document.documentElement.mozRequestFullScreen();
+  } else if (document.documentElement.webkitRequestFullscreen) {
+    // Chrome, Safari and Opera
+    elem.webkitRequestFullscreen();
+  } else if (document.documentElement.msRequestFullscreen) {
+    // IE/Edge
+    document.documentElement.msRequestFullscreen();
+  }
 }
 
 function guessedAnswer() {
