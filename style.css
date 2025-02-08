@@ -102,14 +102,6 @@ guessing_value {
   display: none;
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 .bottom_section_1st_half input {
   height: 5vh;
   align-items: center;
